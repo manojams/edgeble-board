@@ -3,24 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to doc-meta-openaia's documentation!
+Welcome to Edgebble Manual!
 ============================================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
+   :caption: Port Usage
 
-   readme
-   layer-contents
-   extra-build-config
-   extra-apps
-   contributing
+   port-usage.md
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
