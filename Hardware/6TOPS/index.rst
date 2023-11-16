@@ -1,7 +1,5 @@
-Models
+6TOPS
 *****
-
-Edgeble Models
 
 .. code-block:: none
         
