@@ -14,6 +14,11 @@ Edgeble Models
    :maxdepth: 1
    :caption: Contents:
   
-   
+   Quickstart
+   OpenAIA/OpenAIA v1.0
+   OpenAIA/Flashprogram
+   OpenAIA/NCM6BPorts
+   OpenAIA/IO-NCM6BPorts
+
 
 Team Amarula Wiki.

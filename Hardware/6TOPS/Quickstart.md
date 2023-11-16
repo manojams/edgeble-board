@@ -12,13 +12,23 @@
 
 ## c. 4G/5G connections
 
-
-
 #  2. Factory boot
 
 ## a. Sample tests
 
 
+#  1. NCM6B Kit
 
+## a. Power
+
+        Power the board with 12v Adaptor
+
+## OpenAIA
+
+## c. 4G/5G connections
+
+#  2. Factory boot
+
+## a. Sample tests
 
 
