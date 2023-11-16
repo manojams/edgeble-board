@@ -3,15 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Edgeble Board Manual
+Welcome to Edgeble Wiki!
+
 ===========================
 
 Contents:
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Port Usage
+   :maxdepth: 1
+   :caption: Contents:
 
-   port-usage.md
-
+   about/about.rst
+   hardware/index
+   models/index
+   mainline/index
 
