@@ -1,10 +1,10 @@
 ## OpenAIA v1.0 support
 
-## a. Compile OpenAIA
+# a. Compile OpenAIA
 
-## b. Compile Linux Kernel
+# b. Compile Linux Kernel
 
-## c. Compile U-Boot
+# c. Compile U-Boot
 
 
 
