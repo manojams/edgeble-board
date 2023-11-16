@@ -22,17 +22,23 @@
         root@neu6b-io:/# aplay -D hw:0,0 01.wav
         Playing WAVE '01.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 
-##  2. Mic
+#  2. Mic
 
-*  Plug the headset into the mic port
+## 2.1  Plug the headset 
+
+*  Plug the headset into the mic port and get the sample wav file.
 
         root@neu6b-io:/# arecord -d 30 -f S16_LE -r 44100 -c 2 mic.wav
+
+## 2.2  Listen the Audio
 
 *  Insert the headphones into the Audio port and use the following command to play the recorded audio
 
         root@neu6b-io:/# aplay -D hw:0,0 mic.wav
 
-##  3. CAN
+#  3. CAN
+
+## 3.1  List the CAN port
 
 * Test as loopback mode
 
@@ -48,13 +54,19 @@
         [ 24.423541] rockchip_canfd fea50000.can can0: rockchip_canfd_get_berr_counter
         RX_ERR_CNT=0x00000000, TX_ERR_CNT=0x00000000
 
+## 3.2  set Bitrate
+
 * Set can bitrate :-
 
         root@neu6b-io:/# ip link set can0 type can bitrate 250000 loopback on
 
+## 3.3  Enable CAN interface
+
 * Bringing CAN interface up  :-
 
         root@neu6b-io:/# ip link set up can0
+
+## 3.4  Test CAN
 
 * On target open a terminal for receiving :-
 
@@ -91,7 +103,9 @@
 
 
 
-##  4. Ethernet
+#  4. Ethernet
+
+##  4.1 Check Ethernet Config
 
 *  get from debug or adb by ifconfig
 
@@ -130,6 +144,8 @@
                 TX packets 0  bytes 0 (0.0 B)
                 TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
+##  4.2  Ethernet Ping Test
+
 *  PING Test
 
         root@neu6b-io:~# ping -I enP2p33s0 google.com
@@ -142,12 +158,16 @@
         rtt min/avg/max/mdev = 15.240/15.288/15.342/0.027 ms
 
 
-##  5. FAN
+#  5. FAN
+
+## 5.1 List PWM 
 
 *  List pwm and its functionalities
 
         root@neu6b-io:/# ls /sys/devices/platform/fd8b0020.pwm/pwm/pwmchip2/
         device  export  npwm  power  pwm0  subsystem  uevent  unexport
+
+## 5.1 Test FAN functionalities 
 
 *  set period
 
@@ -170,7 +190,9 @@
         root@neu6b-io:/# echo 0 > /sys/devices/platform/fd8b0020.pwm/pwm/pwmchip2/pwm0/enable
 
 
-##  6. RTC 
+#  6. RTC 
+
+## 6.1 Check RTC info
 
 *  get from debug by dmesg
 
@@ -181,6 +203,8 @@
         [    7.638234] rtc-hym8563 6-0051: rtc information is valid
         [    7.643576] rtc-hym8563 6-0051: registered as rtc0
         [    7.644591] rtc-hym8563 6-0051: setting system clock to 2021-01-19T17:45:30 UTC (1611078330
+
+## 6.2 Check Clock Information
 
 *  get clock information by hwclock
 
@@ -193,6 +217,8 @@
         2022-12-22 12:13:38.599542+00:00
         root@neu6b-io:~# date
         Thu Dec 22 12:15:58 UTC 2022
+
+## 6.2 Set Time Zone
 
 *  set Time zone 
 
@@ -230,6 +256,8 @@
         root@neu6b-io:~# hwclock -r
         2023-10-03 20:28:44.513664+05:30
 
+## 6.2 Test RTC 
+
 *  Board powered off via power button, battery removed, after 10 mins inserted battery and powered on via power button
 
         root@neu6b-io:/# hwclock -r
@@ -237,7 +265,9 @@
         root@neu6b-io:/# date
         Tue Oct  3 20:29:50 IST 2023
 
-##  7. RS232
+#  7. RS232
+
+## 7.1 List RS232 serial Ports
 
 *  List serial Ports
 
@@ -246,6 +276,8 @@
         16550A
         [ 6.907000] feba0000.serial: ttyS7 at MMIO 0xfeba0000 (irq = 91, base_baud = 1500000) is a
         16550A
+
+## 7.2 Test RS232 serial Ports
 
 *  Short TX and RX Pins as shown in Picture 
 ![rs232-1](https://github.com/manojams/docs-edg-test-setup/assets/97679353/e88f1938-e7d3-460f-917d-4f556bbe9898)
@@ -263,7 +295,10 @@
 *  Now, whatever we type on keyboard gets printed on minicom as shown.
 ![rs232-3](https://github.com/manojams/docs-edg-test-setup/assets/97679353/06fc9f4a-9e16-4196-ae1d-5db95956a992)
 
-##  8. HDMI RX Test 
+
+#  8. HDMI RX Test 
+
+## 8.1 List HDMI devices
 
 * get the list of hdmi devices :-
 
@@ -291,6 +326,8 @@
 
 - After the HDMI RX device is connected , it will be registered as a video device in the kernel, and 
 the generated node is /dev/video20. 
+
+## 8.2 Check HDMI Info
 
 * Check the device information
 
@@ -348,6 +385,7 @@ the generated node is /dev/video20.
         Standards: 
         Flags: 
 
+## 8.2 Test HDMI 
 
 * Capture image files by setting resolution and pixel formats        
 
