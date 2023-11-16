@@ -1,8 +1,8 @@
-##  1. Audio
+#  1. Audio
 
-    ## 1.1  List the playback devices
+## 1.1  List the playback devices
 
-        *  Plug in the headset and use the following command to view the sound card information :- 
+        Plug in the headset and use the following command to view the sound card information :- 
 
         root@neu6b-io:/# aplay -l
         **** List of PLAYBACK Hardware Devices ****
@@ -15,9 +15,9 @@
         Subdevices: 1/1
         Subdevice #0: subdevice #0
 
-    ## 1.2  Play the Audio
+## 1.2  Play the Audio
 
-        *  Audio Plays sounds through card 0 (The name of the Audio card is rockchipes8316)
+        Audio Plays sounds through card 0 (The name of the Audio card is rockchipes8316)
 
         root@neu6b-io:/# aplay -D hw:0,0 01.wav
         Playing WAVE '01.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
