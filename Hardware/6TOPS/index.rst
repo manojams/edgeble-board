@@ -15,7 +15,7 @@ Edgeble Models
    :caption: Contents:
   
    Quickstart
-   OpenAIA/OpenAIA v1.0
+   OpenAIA/OpenAIA-v1.0
    OpenAIA/Flashprogram
    OpenAIA/NCM6BPorts
    OpenAIA/IO-NCM6BPorts
