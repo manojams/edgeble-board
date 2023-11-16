@@ -1,5 +1,7 @@
 ##  1. Audio
 
+# 1.1  List the playback devices
+
 *  Plug in the headset and use the following command to view the sound card information :- 
 
         root@neu6b-io:/# aplay -l
@@ -12,6 +14,8 @@
         i2s-hifi-0]
         Subdevices: 1/1
         Subdevice #0: subdevice #0
+
+# 1.2  Play the Audio
 
 *  Audio Plays sounds through card 0 (The name of the Audio card is rockchipes8316)
 
