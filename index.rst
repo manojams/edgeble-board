@@ -14,7 +14,6 @@ Contents:
    :caption: Contents:
 
    about/about.rst
-   Hardware/index.rst
-   Models/index.rst
-   Mainline/index.rst
+   Hardware/index
+
 
