@@ -15,6 +15,4 @@ Edgeble Hardware
    :caption: Contents:
  
    6TOPS/index
-   5TOPS/index
-   2TOPS/index
-   1TOPS/index
+
