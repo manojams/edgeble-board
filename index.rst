@@ -13,7 +13,7 @@ Contents:
    :maxdepth: 1
    :caption: Contents:
 
-   about/about.rst
+   about/index
    Hardware/index
 
 
