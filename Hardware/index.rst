@@ -1,4 +1,4 @@
-About
+Hardware
 *****
 
 This wiki is for documenting an information in the field of Embedded Linux
@@ -20,6 +20,6 @@ Feel free to write for any corrections and updates to
    :maxdepth: 1
    :caption: Contents:
   
-   Quickstart
+   6TOPS/index
 
 Team Amarula Wiki.
