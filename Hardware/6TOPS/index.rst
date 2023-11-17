@@ -13,8 +13,6 @@
    :caption: Contents:
   
    Quickstart
-   OpenAIA/OpenAIA-v1.0
-   OpenAIA/Flashprogram
 
 
 Team Amarula Wiki.
