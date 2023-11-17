@@ -14,7 +14,7 @@ Edgeble Hardware
    :maxdepth: 1
    :caption: Contents:
  
-   6TOPS/6tops.rst
-   5TOPS/5tops.rst
-   2TOPS/2tops.rst
-   1TOPS/1tops.rst
+   6TOPS/index
+   5TOPS/index
+   2TOPS/index
+   1TOPS/index
